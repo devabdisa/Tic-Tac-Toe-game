@@ -6,7 +6,7 @@ This project is for practicing core React concepts like components, props, and s
 ---
 
 ## 🚀 Live
-👉 [View here](https://devabdisa.github.io/Tic-Tac-Toe-game/)
+👉 [View here](https://tic-tac-toe-game-dev-abdisa-reactjs.netlify.app/)
 
 ---
 
