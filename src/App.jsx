@@ -75,7 +75,7 @@ function App() {
   const winner = deriveWinner(gameBoard, players);
   const hasDraw = gameTurns.length === 9 && !winner;
 
-  function handleSelectSquere(rowIndex, colIndex) {
+  function handleSelectSquare(rowIndex, colIndex) {
     // setActivePlayer((curActivePlayer) => (curActivePlayer === "X" ? "O" : "X"));
 
     setGameTurns((prevTurns) => {
@@ -123,7 +123,7 @@ function App() {
         {(winner || hasDraw) && (
           <GameOver winner={winner} onRestart={handleRestart} />
         )}
-        <GameBoard onSelectSquere={handleSelectSquere} board={gameBoard} />
+        <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
       </div>
       <Logs turns={gameTurns} />
     </main>

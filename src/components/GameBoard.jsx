@@ -1,5 +1,5 @@
 
-const GameBoard = ({ onSelectSquere, board }) => {
+const GameBoard = ({ onSelectSquare, board }) => {
 
   //   const [gameBoard, setGameBoard] = useState(initialGameBoard);
   //   function handleSquereClick(rowIndex, colIndex) {
@@ -22,7 +22,7 @@ const GameBoard = ({ onSelectSquere, board }) => {
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
                 <button
-                  onClick={() => onSelectSquere(rowIndex, colIndex)}
+                  onClick={() => onSelectSquare(rowIndex, colIndex)}
                   disabled={playerSymbol !== null}
                 >
                   {playerSymbol}
